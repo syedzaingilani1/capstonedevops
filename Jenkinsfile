@@ -60,7 +60,6 @@ pipeline {
             }
         }
         
-<<<<<<< HEAD
          stage('Checking if app is up') {
               steps{
                   echo 'Checking if app is up...'
@@ -69,9 +68,6 @@ pipeline {
                 }
             }
         } 
-=======
-        
->>>>>>> 462271a2eff8db4e2a0bc083491aae5ca3980915
         
         stage('Checking rollout') {
               steps{
