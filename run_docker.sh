@@ -1,9 +1,5 @@
-#!/usr/bin/env bash
-
-cd app
-
-docker build --tag=syedzaingilani1/capstonedevops .
+docker build -t html-server-image:v1 .
 
 docker image ls
 
-docker run -p 8000:80 syedzaingilani1/capstonedevops
+docker run -d -p 8000:8000 html-server-image:v1

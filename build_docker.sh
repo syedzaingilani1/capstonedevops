@@ -2,6 +2,6 @@
 
 cd app
 
-docker build --tag=syedzaingilani1/capstonedevops .
+docker build --tag=syedzaingilani/capstonedevops .
 
 docker image ls
