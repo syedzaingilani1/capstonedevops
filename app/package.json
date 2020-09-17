@@ -1,15 +1,14 @@
 {
-  "name": "project-capstone",
+  "name": "syedzaingilani",
   "version": "1.0.0",
-  "description": "Project 5 of Udacity Nanodegree Program",
+  "description": "this a simple hello world app for docker containarization purpose",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Talha Nasim",
-  "license": "MIT",
+  "author": "zainstudios",
+  "license": "ISC",
   "dependencies": {
-    "express": "4.17.1"
+    "express": "^4.17.1"
   }
 }

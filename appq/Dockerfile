@@ -18,4 +18,4 @@ RUN cp -a /tmp/node_modules /usr/src/app/
 
 EXPOSE 80
 
-CMD ["bash","./docker_initiate.sh"]
+CMD ["bash","./docker_start.sh"]
