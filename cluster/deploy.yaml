@@ -37,11 +37,11 @@ spec:
             topologyKey: "kubernetes.io/hostname"
       containers:
       - name: udacity
-        image: talha110/talha-project-capstone:v1
-        command: [
-          "/bin/bash", 
-          "start_docker.sh"
-          ]
+        image: syedzaingilani/html-server-image:v1
+        #command: [
+          ##"/bin/bash", 
+         # "start_docker.sh"
+         # ]
         imagePullPolicy: Always
         resources:
           limits:
@@ -60,7 +60,7 @@ spec:
             port: 80
           periodSeconds: 10
           successThreshold: 1
-          failureThreshold: 2
+          failureThreshold: 3
           timeoutSeconds: 1
 
 ---
@@ -73,11 +73,11 @@ spec:
   selector:
     app: capstone-app
   ports:
-    - name: helloword-http
+    - name: hellowordnginx-http
       protocol: TCP
       port: 80
       targetPort: 80
-    - name: helloword-https
+    - name: hellowordnginx-https
       protocol: TCP
       port: 443
       targetPort: 443
